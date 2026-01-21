@@ -15,7 +15,7 @@ The software offers three distinct migration algorithms to suit different comput
 HPC is implemented and paralelized with the number of shotgathers.
 
 > [!IMPORTANT]
-> Field data pre-processing and final PSDM image post-processing must be performed by the user using external tools (e.g., Seismic Unix).
+> Field data pre-processing and final PSDM image post-processing must be performed by the user using external tools.
 
 ## Prerequisites
 
