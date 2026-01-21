@@ -24,8 +24,8 @@ Before installing, ensure you have the following dependencies:
 
 ## Installation
 - Navigate to the source directory and compile:
-  cd PSDM/src
-  make
+- cd PSDM/src
+- make
 
 ## Inputs
 - The software requires the following input files to execute:
