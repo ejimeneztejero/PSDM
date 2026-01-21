@@ -1,2 +1,46 @@
-# PSDM
-Prestack Depth Migration for marine data
+# PSDM: Prestack Depth Migration for Marine Data
+
+- This software is a specialized geophysical toolset designed for the Prestack Depth Migration of marine seismic data. It transform seismic reflections into accurate depth images of the subsurface.
+
+- The software is developed at the **Barcelona Center for Subsurface Imaging (BCSI)**, part of the ICM-CSIC.
+
+## Features
+
+The software offers three distinct migration algorithms to suit different computational and imaging needs:
+
+- Pure Eikonal Calculation: Primarily used for debugging and quality control of velocity models.
+- Kirchhoff Migration: A classic, efficient approach for structural imaging.
+- Reverse Time Migration (RTM): High-fidelity imaging for complex geological structures.
+
+> [!IMPORTANT]
+> Field data pre-processing and final PSDM image post-processing must be performed by the user using external tools (e.g., Seismic Unix).
+
+## Prerequisites
+
+Before installing, ensure you have the following dependencies:
+- Fortran/C Compilers (gfortran/mpif90/mpirun).
+- Seismic Unix (SU): The software handles data in `.su` format.
+- Make: For build automation.
+
+## Installation
+- Navigate to the source directory and compile:
+  cd PSDM/src
+  make
+
+## Inputs
+- The software requires the following input files to execute:
+  Seismic Data: MCS Marine field data in Seismic Unix (.su) format.
+- Navigation: An ASCII file containing the geometry/navigation information.
+- Parameter File: A configuration file (read during execution) where you specify which algorithm to use (eikonal, kirchoff or RTM), velocity models, grid dimensions, and algorithm-specific parameters. This parameter file "parfile" is included in the PSDM folder.
+
+## Documentation and testing
+- Manual: A detailed PDF manual is currently under construction and will be added to the repository soon.
+- Test Data: Sample datasets for testing the code will be hosted on the Zenodo database (link forthcoming).
+
+## Author & Acknowledgments
+- Author: Clara Estela Jiménez Tejero.
+- Institution: Barcelona Center for Subsurface Imaging, ICM-CSIC.
+
+## How to Acknowledge
+- While this software is freely available, we would be grateful if you could notify us of its use. 
+- Please send a brief email to ejimenez@icm.csic.es to acknowledge your usage, which helps us justify continued development and support.
