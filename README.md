@@ -38,9 +38,7 @@ Before installing, ensure you have the following dependencies:
 - Manual: A detailed PDF manual is currently under construction and will be added to the repository soon.
 - Test Data: Sample datasets for testing the code will be hosted on the Zenodo database (link forthcoming).
 
-## Author & Acknowledgments
+## Author & Acknowledge
 - Author: Clara Estela Jiménez Tejero.
 - Institution: Barcelona Center for Subsurface Imaging, ICM-CSIC.
-
-## How to Acknowledge
 - While this software is freely available, we would be grateful if you could notify us of its use. Please send a brief email to ejimenez@icm.csic.es to acknowledge your usage, which helps us justify continued development and support.
