@@ -1,8 +1,8 @@
 # PSDM: Prestack Depth Migration for Marine Data
 
-- This software is a specialized geophysical toolset designed for the Prestack Depth Migration of marine seismic data. It transform seismic reflections into accurate depth images of the subsurface.
-
-- The software is developed at the **Barcelona Center for Subsurface Imaging (BCSI)**, part of the ICM-CSIC.
+- This software is a specialized geophysical toolset designed for the Prestack Depth Migration of marine seismic data.
+- It transform seismic reflections into depth images of the subsurface with three different migration algorithms.
+- It is tested for MCS data but it is also prepared for WAS data (still to be tested).
 
 ## Features
 
