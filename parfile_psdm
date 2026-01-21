@@ -1,0 +1,73 @@
+#############################################
+### params PSDM for MCS marine field data
+#############################################
+
+psdm_rtm: 0		# calculation of Reverse Time Migration PSDM
+psdm_eikonal: 0		# calculation of pure eikonal PSDM (for debuging)
+psdm_kirchoff: 1	# calculation of Kirchoff PSDM
+
+### general params
+#rtm_WAS: 0	# geometry of experiment (WAS)
+rtm_MCS: 1	# geometry of experiment (streamer)
+write_interval: 5	# write PSDM every 5 rounds
+output_folder: 'psdm_kirchoff'	# name output folder for results
+
+### frequencies (Hz) for filtering data (and source if using RTM)
+#fi: 3
+#ff: 50 #10
+
+### Format for saving PSDM
+save_su: 1
+#save_v: 1
+#save_xzv: 1
+
+### taper possibility
+taper_option: 0
+T_zeros: 0 # 0.5 # (seconds)
+added_space: 1000 # extra meters at each of the streamer
+
+### kirchoff parameters
+theta_max: 60
+theta_taper: 10
+wmax: 0.7
+
+### RTM parameters
+#delay_data: 0.12	#seconds, delay with respect to source (to relocate the seafloor correctly)
+delay_ricker: 0.
+freq_ricker: 20
+post_filt: 1	# filters RTM result with a bandpass
+
+### params Vp velocity model: 
+nxmodel: 29617
+nymodel: 3598
+#nymodel_max: 1200
+dmodel: 12.5
+dmodel_prop: 12.5
+input_folder_model: 'input/vel' 
+vel_file: 'Vel_dx12.5_dz12.5.su'
+vel_su: 1
+
+### Params from navigation and shot list
+input_folder_mcs: 'input/shots2'
+mcs_file_list: 'shot_list.txt'
+nav_mcs_file: 'nav_scr2.dat'
+nav_mcs_cols: 111
+d_shot_model: 6227	#distance (m) between cero of the model to the closest shot
+dir_boat: 1	# direction of the boat (+1 from left to right, -1 from right to left)
+shot_depth_mcs: 12.5
+streamer_depth: 12.5
+
+### params from SU header 
+# Geometry of receivers
+offset_header_mcs: 1
+offset_unit_mcs: -10
+NumShots_mcs: 7101
+byte_shotnumber_mcs: 9
+NumRec: 480
+drec: 12.5
+near_offset: 183
+dt_mcs: 0.004
+nt_mcs: 4081
+#nt_mcs_cut: 3000
+#cut_multiple: 1
+#cut_sf: 1
