@@ -30,7 +30,7 @@ Before installing, ensure you have the following dependencies:
 - make
 
 ## Inputs
-- The software requires the following input files to execute, MCS seismic marine field data in Seismic Unix (.su) format.
+- The software requires MCS seismic marine field data in Seismic Unix (.su) format.
 - Navigation: An ASCII file containing the geometry/navigation information.
 - Parameter File: A configuration file (read during execution) where you specify which algorithm to use (eikonal, kirchoff or RTM), velocity models, grid dimensions, and algorithm-specific parameters. This parameter file "parfile" is included in the PSDM folder.
 
