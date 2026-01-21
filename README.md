@@ -12,13 +12,15 @@ The software offers three distinct migration algorithms to suit different comput
 - Kirchhoff Migration: A classic, efficient approach for structural imaging.
 - Reverse Time Migration (RTM): High-fidelity imaging for complex geological structures.
 
+HPC is implemented and paralelized with the number of shotgathers.
+
 > [!IMPORTANT]
 > Field data pre-processing and final PSDM image post-processing must be performed by the user using external tools (e.g., Seismic Unix).
 
 ## Prerequisites
 
 Before installing, ensure you have the following dependencies:
-- Fortran/C Compilers (gfortran/mpif90/mpirun).
+- Fortran Compilers (gfortran/mpif90/mpirun).
 - Seismic Unix (SU): The software handles data in `.su` format.
 - Make: For build automation.
 
