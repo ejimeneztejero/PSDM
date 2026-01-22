@@ -32,11 +32,11 @@ Before installing, ensure you have the following dependencies:
 ## Inputs
 - The software requires MCS seismic marine field data in Seismic Unix (.su) format.
 - Navigation: An ASCII file containing the geometry/navigation information.
-- Parameter File: A configuration file (read during execution) where you specify which algorithm to use (eikonal, kirchoff or RTM), velocity models, grid dimensions, and algorithm-specific parameters. An input file "parfile" is included in this folder as an example.
+- Parameter File: A configuration file (read during execution) where you specify which algorithm to use (eikonal, kirchoff or RTM), velocity models, grid dimensions, and algorithm-specific parameters. An input file "parfile_psdm" is included in this folder as an example.
 
 ## Run 
 - Example (run with 40 MPI processes):
-- mpirun -np 40 psdm_run parfile
+- mpirun -np 40 psdm_run parfile_psdm
   
 ## Documentation and testing
 - Manual: A detailed PDF manual is currently under construction and will be added to the repository soon.
