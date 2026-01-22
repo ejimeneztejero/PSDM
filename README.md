@@ -2,7 +2,7 @@
 
 - This software is a specialized geophysical toolset designed for the Prestack Depth Migration of marine seismic data.
 - It transform seismic reflections into depth images of the subsurface with three different migration algorithms.
-- It is tested for MCS data but it is also prepared for WAS data (still to be tested).
+- It is tested for MCS data but it is also prepared for WAS data.
 
 ## Features
 
