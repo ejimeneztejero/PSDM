@@ -27,9 +27,10 @@ T_zeros: 0 # 0.5 # (seconds)
 added_space: 1000 # extra meters at each of the streamer
 
 ### kirchoff parameters
-theta_max: 60
-theta_taper: 10
-wmax: 0.7
+theta_max: 60 # 60 by default
+theta_taper: 10 # 10 by defalt
+wmax: 0.7 # 1 by default
+vp0: 1500 # 1500 by default 
 
 ### RTM parameters
 #delay_data: 0.12	#seconds, delay with respect to source (to relocate the seafloor correctly)
