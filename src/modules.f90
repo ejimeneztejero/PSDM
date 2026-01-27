@@ -76,6 +76,7 @@ implicit none
   integer :: method,typef
   integer :: nav_was_cols,nav_mcs_cols
 
+  real :: vp0
   real :: xmodel_min,xmodel_max
   real :: ymodel_max
   real :: theta_max,theta_taper,wmax,z_shallow,z_deep
@@ -193,6 +194,8 @@ implicit none
   d_shot_model=0
   dPML=20
 
+  vp0=1500.
+
   !! ojo, automatizar para los tres marcos de profundidad
   theta_max=60
   theta_taper=10
@@ -286,6 +289,8 @@ implicit none
            read(buffer, *, iostat=ios) post_filt
         case ('mute_forward:')
            read(buffer, *, iostat=ios) mute_forward
+        case ('vp0:')
+           read(buffer, *, iostat=ios) vp0
         case ('theta_max:')
            read(buffer, *, iostat=ios) theta_max
         case ('theta_taper:')

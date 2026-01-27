@@ -413,7 +413,8 @@ if(icount.ge.line_i.and.icount.le.line_f)  then
         	it = 1 + floor(tt_tot / dt_prop)
         	if (it <= 1 .or. it >= nt_prop) cycle
 
-		call v_eff(z_img,z_water,Veff)
+!!		call v_eff(z_img,z_water,Veff)
+		Veff=vp0
 
 !!		if(z_img.le.z_water)Veff=1500.
 !!		if(z_img.gt.z_water)Veff=Vprom(j)
